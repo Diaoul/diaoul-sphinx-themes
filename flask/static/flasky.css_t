@@ -6,8 +6,8 @@
  * :license: Flask Design License, see LICENSE for details.
  */
 
-{% set page_width = '940px' %}
-{% set sidebar_width = '220px' %}
+{% set body_width = '940px' %}
+{% set sidebar_width = '260px' %}
  
 @import url("basic.css");
  
@@ -23,8 +23,8 @@ body {
 }
 
 div.document {
-    width: {{ page_width }};
-    margin: 30px auto 0 auto;
+    width: 100%;
+    margin: 20px auto 0 auto;
 }
 
 div.documentwrapper {
@@ -47,7 +47,8 @@ hr {
 div.body {
     background-color: #ffffff;
     color: #3E4349;
-    padding: 0 30px 0 30px;
+    padding: 15px 30px 0 30px;
+    width: {{ body_width }};
 }
 
 img.floatingflask {
@@ -56,7 +57,7 @@ img.floatingflask {
 }
  
 div.footer {
-    width: {{ page_width }};
+    width: 100%;
     margin: 20px auto 30px auto;
     font-size: 14px;
     color: #888;
@@ -87,7 +88,7 @@ div.sphinxsidebar {
 }
 
 div.sphinxsidebarwrapper {
-    padding: 18px 10px;
+    padding: 18px 15px;
 }
 
 div.sphinxsidebarwrapper p.logo {
@@ -161,14 +162,6 @@ div.body h6 {
     margin: 30px 0px 10px 0px;
     padding: 0;
 }
-
-{% if theme_index_logo %}
-div.indexwrapper h1 {
-    text-indent: -999999px;
-    background: url({{ theme_index_logo }}) no-repeat center center;
-    height: {{ theme_index_logo_height }};
-}
-{% endif %}
  
 div.body h1 { margin-top: 0; padding-top: 0; font-size: 240%; }
 div.body h2 { font-size: 180%; }
