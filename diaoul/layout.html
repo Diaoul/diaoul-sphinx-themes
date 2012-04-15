@@ -1,0 +1,41 @@
+{%- extends "basic/layout.html" %}
+{%- block extrahead %}
+  {{ super() }}
+  {% if theme_flattr_href and theme_flattr_thing_url %}
+  <script type="text/javascript">
+  /* <![CDATA[ */
+  (function() {
+    var s = document.createElement('script');
+    var t = document.getElementsByTagName('script')[0];
+  
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+  
+    t.parentNode.insertBefore(s, t);
+  })();
+  /* ]]> */
+  </script>
+  {% endif %}
+{% endblock %}
+{%- block relbar2 %}{% endblock %}
+{% block header %}
+  {{ super() }}
+  {% if pagename == 'index' %}
+  <div class=indexwrapper>
+  {% endif %}
+{% endblock %}
+{%- block footer %}
+  <div class="footer">
+    &copy; Copyright {{ copyright }}.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+  </div>
+  {% if theme_fork_me and theme_github_user and theme_github_repo %}
+  <a href="https://github.com/{{ theme_github_user }}/{{ theme_github_repo }}">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub">
+  </a>
+  {% endif %}
+  {% if pagename == 'index' %}
+  </div>
+  {% endif %}
+{%- endblock %}

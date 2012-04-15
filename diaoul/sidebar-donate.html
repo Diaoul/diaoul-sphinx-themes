@@ -1,0 +1,12 @@
+<h3>Donate</h3>
+<p>If you like {{ project }}, please consider making a donation</p>
+{% if theme_flattr_href and theme_flattr_thing_url %}
+<p>
+    <a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="{{ theme_flattr_href }}"></a>
+    <noscript>
+        <a href="{{ theme_flattr_thing_url }}" target="_blank">
+            <img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" />
+        </a>
+    </noscript>
+</p>
+{% endif %}

@@ -1,8 +1,8 @@
 /*
- * flasky.css_t
+ * diaoul.css_t
  * ~~~~~~~~~~~~
  *
- * :copyright: Copyright 2010 by Armin Ronacher.
+ * :copyright: Copyright 2010 by Armin Ronacher, 2012 Antoine Bertin
  * :license: Flask Design License, see LICENSE for details.
  */
 
@@ -49,11 +49,6 @@ div.body {
     color: #3E4349;
     padding: 15px 30px 0 30px;
     width: {{ body_width }};
-}
-
-img.floatingflask {
-    padding: 0 0 10px 10px;
-    float: right;
 }
  
 div.footer {
