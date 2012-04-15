@@ -14,7 +14,7 @@ To use this style in your Sphinx documentation, follow this guide:
     html_theme_path = ['_themes']
     html_theme = 'diaoul'
 
-The following theme options exist::
+The following theme options exist:
 
 * ``github_user``: GitHub user or organization name
 * ``github_repo``: GitHub repository name
