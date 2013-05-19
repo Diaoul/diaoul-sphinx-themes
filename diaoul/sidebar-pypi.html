@@ -1,0 +1,12 @@
+<p>
+{% if theme_pypi_downloads %}
+    <a href="https://crate.io/packages/{{ project }}/" style="border-bottom: none">
+        <img src="https://pypip.in/d/{{ project }}/badge.png" alt="PyPI downloads" />
+    </a>
+{% endif %}
+{% if theme_pypi_version %}
+    <a href="https://crate.io/packages/{{ project }}/" style="border-bottom: none">
+        <img src="https://pypip.in/v/{{ project }}/badge.png" alt="PyPI version" />
+    </a>
+{% endif %}
+</p>

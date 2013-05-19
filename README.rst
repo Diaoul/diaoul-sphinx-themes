@@ -18,6 +18,13 @@ The following theme options exist:
 
 * ``github_user``: GitHub user or organization name
 * ``github_repo``: GitHub repository name
-* ``fork_me``: set to 1 to use the "fork_me" badge. Require ``github_user`` and ``github_repo`` to be set
-* ``flattr_href``: Website for Flattr
-* ``flattr_thing_url``: Thing URL for Flattr
+* ``github_branch``: GitHub repository branch
+* ``fork_me``: set to 1 to use the "Fork Me" badge
+* ``flattr``: set to 1 to enable Flattr
+* ``flattr_href``: website for Flattr
+* ``flattr_thing_url``: thing URL for Flattr
+* ``gittip``: set to 1 to enable Gittip
+* ``pypi_downloads``: set to 1 to enable the PyPI downloads badge
+* ``pypi_version``: set to 1 to enable the PyPI version badge
+* ``travis``: set to 1 to enable the Travis-CI build badge
+* ``coveralls``: set to 1 to enable the Coveralls coverage badge
